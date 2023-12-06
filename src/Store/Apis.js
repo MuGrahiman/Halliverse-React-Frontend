@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  // baseURL: `https://youtube-clone-mug-de178feea9da.herokuapp.com/`,
-  baseURL: "http://localhost:4400/api",
+  baseURL: `https://halliverse-backend.onrender.com/api`,
+  // baseURL: "http://localhost:4400/api",
 });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("Profile"))
