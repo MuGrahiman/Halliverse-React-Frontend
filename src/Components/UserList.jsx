@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Container, Wrapper } from "../StyledComponents/globalStyles";
 import { Header } from "../StyledComponents/containerStyle";
-import styled from "styled-components";
-import { CardWrapper } from "../StyledComponents/cardStyle";
 import { IoIosArrowBack } from "react-icons/io";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchUserById } from "../Store/Actions";
 import Card from "./Card";
-const UserList = ({}) => {
+const UserList = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const { data } = useSelector((state) => state.userReducer);

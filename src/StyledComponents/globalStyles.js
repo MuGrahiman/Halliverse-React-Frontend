@@ -26,13 +26,7 @@ export const Button = styled.button`
   }
 `;
 export const Wrapper =styled.section`
-/* width: 100%; */
 display: flex;
-/* flex: 1; */
-/* overflow-y: auto; */
-/* max-height: 50vh; */
-/* overflow-x: hidden; */
-/* background: #ffff; */
 flex-wrap: wrap;
 align-items: center;
 justify-content: center;
@@ -40,14 +34,9 @@ gap: 5px;
 margin: 5rem 0;
 `;
 export const GridContainer =styled.section`
-/* height: 10vh; */
-/* width: 30%; */
 display: grid;
 grid-template-columns: 40% 60%;
 max-height: 50vh;
-/* overflow-y: auto; */
-/* flex-wrap: wrap; */
-/* align-items: center; */
 justify-content: center;
 gap: 1rem;
 margin: 5rem 0;

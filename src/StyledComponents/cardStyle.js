@@ -11,27 +11,22 @@ export const CardWrapper = styled(Wrapper)`
   gap: 5px;
   flex-direction: column;
   padding: 1.5rem;
-  /* scrollbar-width: none; */
 
   &::-webkit-scrollbar {
     width: 3px;
-    height: 3px; /* For Chrome and Safari */
+    height: 3px; 
   }
   &::-webkit-scrollbar-thumb {
-    /* display: none; */
     background: red;
     width: 10px;
     height: 3px;
   }
   &::-webkit-scrollbar-track {
-    /* display: none; */
     box-shadow: inset 0 0 5px grey;
     width: 10px;
     height: 3px;
   }
-  /* &::-webkit-scrollbar {
-    display: none;
-  } */
+
 `;
 
 export const CardContainer = styled.div`
