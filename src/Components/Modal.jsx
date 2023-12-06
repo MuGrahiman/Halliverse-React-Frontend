@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from '../StyledComponents/globalStyles';
 
 // Styled components for the modal
 const ModalOverlay = styled.div`
@@ -41,7 +40,6 @@ const Modal = ({ isOpen, onClose, children }) => {
   return (
     <ModalOverlay>
       <ModalContainer>
-        {/* <Button onClick={onClose}>Close</Button> */}
         {children}
       </ModalContainer>
     </ModalOverlay>

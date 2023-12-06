@@ -1,13 +1,8 @@
 import { IoMdSearch } from "react-icons/io";
 import { SearchBarContainer, SearchInput } from "../StyledComponents/SearchBarStyle.js";
 import { Button } from "../StyledComponents/globalStyles.js";
-import { useState } from "react";
-import UsePagination from "../Hooks/UsePagination.js";
-import { fetchUserBySearchQuery } from "../Store/Actions.js";
 
 function SearchBar({ setValue, Value }) {
-  // const [Data, handlePagination] = UsePagination(fetchUserBySearchQuery, 'searchReducer');
-  // const [search, setSearch] = useState("");
 
   return (
     <SearchBarContainer>
@@ -17,7 +12,6 @@ function SearchBar({ setValue, Value }) {
         type="text"
       />
        <Button
-                // onClick={() => onSearch(search)}
                 w='10%'
                 bg="#de4242"
                 h_bg="#fff"

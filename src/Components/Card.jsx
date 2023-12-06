@@ -26,13 +26,11 @@ const Card = ({
         <CardTitle>{firstName + " " + lastName}</CardTitle>
         <CardDescription>{Email}</CardDescription>
         <CardDescription>Domain: {Domain}</CardDescription>
-        {/* <CardCategory>Gender: {Gender}</CardCategory> */}
         <CardCategory>Gender: {Gender}</CardCategory>
 
         <CardPrice color={Avialable ? "#42de42" : "#de4242"}>
           Avialable{Avialable}
         </CardPrice>
-        {/* <input type="checkbox" /> */}
       </div>
     </CardContainer>
   );

@@ -22,12 +22,7 @@ const UserList = ({}) => {
   useEffect(() => {
     if (data?.user) setSortedProduct([data?.user]);
   }, [data]);
-  const CardXWrapper = styled(CardWrapper)`
-    overflow-y: hidden;
-    overflow-x: auto;
-    flex-direction: row;
-    align-items: normal;
-  `;
+
   return (
     <div>
       <Container bg={"#bdbdbd"}>
@@ -35,15 +30,11 @@ const UserList = ({}) => {
           <Link to="/">
             <IoIosArrowBack />
           </Link>
-          {/* <p></p> */}
         </Header>
         <Wrapper>
           {SortedProduct?.length > 0
             ? SortedProduct?.map((data) => (
-                // <Link
-                //   to={`user/${data._id}`}
-                //   style={{ textDecoration: "none" }}
-                // >
+            
                   <Card
                     firstName={data?.first_name}
                     lastName={data?.last_name}
@@ -55,7 +46,6 @@ const UserList = ({}) => {
                     Gender={data?.gender}
                     Avialable={data?.available}
                   />
-                // </Link>
               ))
             : "No Items"}
         </Wrapper>

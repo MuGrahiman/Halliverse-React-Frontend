@@ -43,7 +43,6 @@ const Team = () => {
   useEffect(() => {
     dispatch(fetchAllTeamsData());
   }, [dispatch]);
-  const openModal = () => setIsModalOpen(true);
 
   const closeModal = () => setIsModalOpen(false);
 

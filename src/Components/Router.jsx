@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import UsersList from "./UsersList";
 import UserList from "./UserList";
 import Team from "./Team";

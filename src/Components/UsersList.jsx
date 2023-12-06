@@ -2,30 +2,24 @@ import React, { useEffect, useState } from "react";
 import { Wrapper } from "../StyledComponents/globalStyles";
 import Card from "./Card";
 import Manipulator from "./Manipulator";
-import products from "../Assets/data/products";
 import SearchBar from "./SearchBar";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import {
   fetchAllUSersData,
   fetchUserByFilter,
   fetchUserBySearchQuery,
 } from "../Store/Actions";
 import Pagination from "./Pagination";
-import UsePagination from "../Hooks/UsePagination";
-// import { userReducer } from 'src/Store/Reducers';
 
 const UsersList = ({ isOpen, handleCheckbox, checkedBox }) => {
   const [SortedProduct, setSortedProduct] = useState([]);
   const [search, setSearch] = useState("");
 const navigate =useNavigate()
   const dispatch = useDispatch();
-  // const [Data, handlePagination] = UsePagination(fetchAllUSersData, 'userReducer');
-  console.log(isOpen+'  '+'in the UsersList');
   const userData = useSelector((state) => state.userReducer);
   const searchData = useSelector((state) => state.searchReducer);
   const filterData = useSelector((state) => state.filterReducer);
-  console.log(filterData);
   useEffect(() => {
     dispatch(fetchAllUSersData());
   }, []);
@@ -47,9 +41,7 @@ const navigate =useNavigate()
   };
 
   const handleFilter = (data) => {
-    console.log(data);
     const { type, sortOption, filterOptions, availableOption } = data;
-    console.log(type, sortOption, filterOptions, availableOption );
 
     if (filterOptions && filterOptions[0] && sortOption && availableOption)
       dispatch(
@@ -74,8 +66,7 @@ const navigate =useNavigate()
       dispatch(fetchUserByFilter({ availableOption }));
     else setSortedProduct(userData?.data);
 
-    // if (options[0]) dispatch(fetchUserByFilter({filterOption:options}));
-    // else setSortedProduct(userData?.data);
+
   };
   return (
     <div>
@@ -103,10 +94,7 @@ const navigate =useNavigate()
         {SortedProduct?.length > 0
           ? SortedProduct?.map((data) => (
               <>
-                {/* <Link
-                  to={`user/${data._id}`}
-                  style={{ textDecoration: "none" }}
-                > */}
+          
                   <Card
                   onClick={()=>!isOpen && navigate(`user/${data._id}`)}
                     firstName={data?.first_name}
@@ -119,7 +107,6 @@ const navigate =useNavigate()
                     Gender={data?.gender}
                     Avialable={data?.available}
                   />
-                {/* </Link> */}
                 {isOpen && (
                   <input
                     type="checkbox"

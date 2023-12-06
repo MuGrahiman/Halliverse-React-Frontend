@@ -46,21 +46,6 @@ const Pagination = ({  handlePageClick }) => {
     }
   };
 
-  // const handleNextBtnClick = () => {
-  //   if (visiblePages + 10 < totalPages.page) {
-  //     setVisiblePages((prev) => prev + 10);
-  //   } else {
-  //     setVisiblePages(totalPages.page);
-  //   }
-  // };
-  
-  // const handlePrevBtnClick = () => {
-  //   if (visiblePages > 10) {
-  //     setVisiblePages((prev) => prev - 10);
-  //   } else {
-  //     setVisiblePages(10);
-  //   }
-  // };
   
   return (
     <PaginationContainer>
@@ -85,12 +70,3 @@ const Pagination = ({  handlePageClick }) => {
 };
 
 export default Pagination;
-// {[...Array(totalPages.page).keys()].map((page) => (
-//   <PageButton
-//     key={page}
-//     active={currentPage === page + 1}
-//     onClick={() => handlePageClick(page + 1)}
-//   >
-//     {page + 1}
-//   </PageButton>
-// ))}

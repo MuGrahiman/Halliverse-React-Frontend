@@ -9,11 +9,9 @@ import {
 } from "../StyledComponents/headerStyle";
 import { Button, Container } from "../StyledComponents/globalStyles";
 import disneyCastle from "../Assets/images/Disneyfav.png";
-import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
 const HeaderComponent = ({ onSearch }) => {
   const headerRef = useRef(null);
-  const [search, setSearch] = useState("");
   
   const [Header, setHeader] = useState(StyledHeader);
   const stickyHeaderFunct = () => {
@@ -42,16 +40,9 @@ const HeaderComponent = ({ onSearch }) => {
               <NavH1>Hello-World</NavH1>
             </NavCNTWrapper>
             <NavCNTWrapper>
-              {/* <SearchBar
-                setValue={(value) => {
-                  onSearch(value);
-                  setSearch(value);
-                }}
-                Value={search}
-              /> */}
+            
                <Link to='/'>
               <Button
-                onClick={() => onSearch(search)}
                 bg="#de4242"
                 h_bg="#fff"
                 c="#fff"
@@ -61,7 +52,6 @@ const HeaderComponent = ({ onSearch }) => {
               </Button></Link>
               <Link to='team'>
               <Button
-                onClick={() => onSearch(search)}
                 bg="#de4242"
                 h_bg="#fff"
                 c="#fff"
