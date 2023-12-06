@@ -38,7 +38,6 @@ const Team = () => {
   const teamData = useSelector((state) => state.teamReducer);
   const [validData, ValidateData, clearValidateData] = useDataValidation();
   const dispatch = useDispatch();
-  if (teamData) teamData?.data?.map((s) => console.log(s));
 
   useEffect(() => {
     dispatch(fetchAllTeamsData());

@@ -33,7 +33,6 @@ const ModalContainer = styled.div`
 
 // Modal component
 const Modal = ({ isOpen, onClose, children }) => {
-  console.log(isOpen+'  '+'in the modal');
 
   if (!isOpen) return null;
 

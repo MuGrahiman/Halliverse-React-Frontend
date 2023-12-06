@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import HeaderComponent from "./Header";
 import { Container } from "../StyledComponents/globalStyles";
 import Router from "./Router";
