@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.34808f22.css",
+    "main.js": "/static/js/main.61a9f4d8.js",
+    "static/media/single-sofa-01.jpg": "/static/media/single-sofa-01.db24b9feed7582c4e98d.jpg",
+    "static/media/arm-chair-03.jpg": "/static/media/arm-chair-03.3249f382638c86196acd.jpg",
+    "static/media/single-sofa-03.jpg": "/static/media/single-sofa-03.0d976c067034347df78d.jpg",
+    "static/media/arm-chair-01.jpg": "/static/media/arm-chair-01.ec17d40c57ba24fe8783.jpg",
+    "static/media/single-sofa-02.jpg": "/static/media/single-sofa-02.c27d595e87065035a135.jpg",
+    "static/media/arm-chair-02.jpg": "/static/media/arm-chair-02.fb2852acd360d23eeb04.jpg",
+    "static/media/chaise-02.png": "/static/media/chaise-02.3fbc1c7bfc61a34f4937.png",
+    "static/media/chaise-04.png": "/static/media/chaise-04.676c5b7ce398b0eac739.png",
+    "static/media/chaise-01.png": "/static/media/chaise-01.3293d49eb1accef377d4.png",
+    "static/media/chaise-03.png": "/static/media/chaise-03.c914554a7501fc421610.png",
+    "static/media/classic-05.jpg": "/static/media/classic-05.cefae14849c738361345.jpg",
+    "static/media/classic-03.jpg": "/static/media/classic-03.9815d15e2cb04273d0fe.jpg",
+    "static/media/teapoy-04.jpg": "/static/media/teapoy-04.c2f832d0a7be5f8923bb.jpg",
+    "static/media/teapoy-02.jpg": "/static/media/teapoy-02.da6afcc6d24c9f93f54a.jpg",
+    "static/media/Disneyfav.png": "/static/media/Disneyfav.e451bc23ccd571cc8fd8.png",
+    "static/media/teapoy-01.jpg": "/static/media/teapoy-01.bcceb28a941c59405d6a.jpg",
+    "static/media/teapoy-05.jpg": "/static/media/teapoy-05.78c98ba0a26d71b025d5.jpg",
+    "static/media/teapoy-03.jpg": "/static/media/teapoy-03.b6e428876139bba9ab2e.jpg",
+    "static/media/teapoy-06.jpg": "/static/media/teapoy-06.fbcc0ff76c4f249b3fdd.jpg",
+    "static/media/double-sofa-02.png": "/static/media/double-sofa-02.eac56d9c3869030c478e.png",
+    "static/media/double-sofa-01.png": "/static/media/double-sofa-01.183aaa8ba79a197491f7.png",
+    "static/media/double-sofa-03.png": "/static/media/double-sofa-03.afb74598f1e42c273506.png",
+    "static/media/single-sofa-04.png": "/static/media/single-sofa-04.980da5a130febb12ba74.png",
+    "index.html": "/index.html",
+    "main.34808f22.css.map": "/static/css/main.34808f22.css.map",
+    "main.61a9f4d8.js.map": "/static/js/main.61a9f4d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34808f22.css",
+    "static/js/main.61a9f4d8.js"
+  ]
+}
